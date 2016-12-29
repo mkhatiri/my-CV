@@ -1,0 +1,5 @@
+pdflatex cv-llt.tex
+
+biber cv-llt
+
+pdflatex cv-llt.tex
