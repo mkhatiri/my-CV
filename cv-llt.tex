@@ -12,6 +12,7 @@
 % \usepackage{ctex}
 
 \usepackage{settings}
+\usepackage{todonotes}
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
@@ -19,33 +20,31 @@
   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=3}]{EB Garamond}
   \setsansfont{Lato}
 \else % If you're using pdfLaTeX or latex
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage[tracking=smallcaps]{microtype}
-  \usepackage{fbb}
-  \usepackage[type1]{cabin}
-  \usepackage[varqu,varl]{zi4}
-  \useosf  %% Comment out if you prefer lining figures rather than old style figures
+	\usepackage{mathptmx}
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	\usepackage[tracking=smallcaps]{microtype}
+	\usepackage{fbb}
+	\usepackage[type1]{cabin}
+	\usepackage[varqu,varl]{zi4}
+	\usepackage{times} 
+	\useosf  %% Comment out if you prefer lining figures rather than old style figures
 \fi
-
 
 %% Only needed if you want a Publication List
 \addbibresource{own-bib.bib}
-
 % Change the page margins if you want
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
 
 % Change the colours if you want
-% \definecolor{SwishLineColour}{HTML}{00FFFF}
-% \definecolor{MarkerColour}{HTML}{0000CC}
-
+ \definecolor{SwishLineColour}{HTML}{585858}
+ \definecolor{MarkerColour}{HTML}{08298A}
 % Change the item prefix marker if you want
-% \prefixmarker{$\diamond$}
+ \prefixmarker{$\bullet$}
 
 %% Photo is only shown if "fullonly" is included
 \includecomment{fullonly}
 % \excludecomment{fullonly}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Curriculum Vitae KHATIRI}
@@ -55,18 +54,15 @@
 	{\LARGE\bfseries\sffamily Mohammed KHATIRI}
 
 
-	\makefield{\faMinus}{\texttt{N\'e le 29 Octobre 1989, Marocain}}
+	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
 
-	\makefield{\faHome}{\texttt{156, r\'esidence Condillac, 1220}}	
+	\makefield{\faHome}{{156, r\'esidence Condillac, 1220}}	
 
-	\makefield{}{\texttt{Rue des R\'esidence 38400, Grenoble}}	
+	\makefield{}{{Rue des R\'esidence 38400, Grenoble}}	
 
-	\makefield{\faEnvelope}{\href{mailto:khatiri.med@gmail.com}{\texttt{khatiri.med@gmail.com}}}
+	\makefield{\faEnvelope}{\href{mailto:khatiri.med@gmail.com}{{khatiri.med@gmail.com}}}
 	
-	\makefield{\faMobile }{\texttt{+33 6 98 80 89 85}}
-
-
-
+	\makefield{\faMobile }{{+33 6 98 80 89 85}}
 
  % link to symboles : http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
 
@@ -79,14 +75,13 @@
 \photoscale{0.2}
 \end{fullonly}
 
-
 \begin{document}
 \makeheaders[c]
 
-\centering
+\begin{center}
   {\LARGE\bfseries\sffamily Doctorant en informatique}\\
   {\sffamily UGA Grenoble - UMP Oujda}
-
+\end{center}
 
 \makerubric{formations}
 \makerubric{stageRecherche}
@@ -96,11 +91,13 @@
 
 \makerubric{activitesEnseignement}
 \makerubric{certificationFormation}
+\makerubric{activiteScientifique}
 \makerubric{projectAcademique}
 \makerubric{competenceInfo}
 
 \input{publications}
-\makerubric{referee}
-% \input{referee-full}
+\makerubric{langue}
+\makerubric{centreInteret}
+%\input{referee-full}
 
 \end{document}
