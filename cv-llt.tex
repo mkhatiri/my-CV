@@ -24,11 +24,11 @@
 	\usepackage[utf8]{inputenc}
 	\usepackage[T1]{fontenc}
 	\usepackage[tracking=smallcaps]{microtype}
-	\usepackage{fbb}
+	%\usepackage{fbb}
 	\usepackage[type1]{cabin}
 	\usepackage[varqu,varl]{zi4}
 	\usepackage{times} 
-	\useosf  %% Comment out if you prefer lining figures rather than old style figures
+	%\useosf  %% Comment out if you prefer lining figures rather than old style figures
 \fi
 
 %% Only needed if you want a Publication List
@@ -56,11 +56,10 @@
 
 	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
 
-	\makefield{\faHome}{{Bâtiment IMAG, équipe DATAMOVE }}	
+	\makefield{\faHome}{{39 avenue ambroise croizat,}}	
 
-	\makefield{}{{700 avenue Centrale, équipe DATAMOVE}}	
-
-	\makefield{}{{Bureau 428, 38401 St Martin d'Hères}}	
+    \makefield{}{{38400, Saint Martin D'here}}
+   
 
 	\makefield{\faEnvelope}{\href{mailto:khatiri.med@gmail.com}{{khatiri.med@gmail.com}}}
 	
@@ -73,7 +72,7 @@
 
 \rightheader{~}
 \begin{fullonly}
-\photo[r]{photo}
+\photo[r]{photo1}
 \photoscale{0.2}
 \end{fullonly}
 
@@ -81,16 +80,17 @@
 \makeheaders[c]
 \begin{center}
   {\LARGE\bfseries\sffamily Doctorant en informatique}\\
-  {\sffamily UGA Grenoble - UMP Oujda}
+  {\sffamily High-performance computing}
 \end{center}
+\makerubric{professionnelle}
 \makerubric{formations}
-\input{publications}
-\makerubric{activiteScientifique}
 \makerubric{certificationFormation}
-\makerubric{activiteEnseignement}
-\makerubric{stageRecherche}
-\makerubric{experienceProfessionnelle}
-%\makerubric{competenceInfo}
+\makerubric{competenceInfo}
+\makerubric{activiteScientifique}
+\input{publications}
+%\makerubric{activiteEnseignement}
+%\makerubric{stageRecherche}
+%\makerubric{experienceProfessionnelle}
 % If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
 %% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
 %\makerubric{projectAcademique}

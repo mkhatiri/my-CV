@@ -22,6 +22,8 @@
 
 \RequirePackage{fontawesome}
 
+
+
 \newcommand{\smallcaps}[1]{\textsc{\lowercase{#1}}}
 
 \RequirePackage[a4paper,nohead,nofoot,hmargin=1cm,vmargin=1.2cm]{geometry}
@@ -40,7 +42,7 @@
 
 \RequirePackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-   \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
+   \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\slshape\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
    
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
@@ -57,7 +59,7 @@
 
 \headerscale{1}
 %\setlength{\headerspace}{6pt}
-\rubricfont{\Large\bfseries\sffamily}
+\rubricfont{\slshape\Large\bfseries\sffamily}
 \setlength{\rubricspace}{2pt}
 %\setlength{\rubricafterspace}{-9pt}
 \setlength{\rubricafterspace}{-3pt}
@@ -71,7 +73,7 @@
   \vspace\rubricspace%
 }
 
-\subrubricfont{\large\bfseries\sffamily}
+\subrubricfont{\slshape\large\bfseries\sffamily}
 \subrubricalignment{l}
 
 \newcommand{\makefield}[2]{\makebox[1.5em]{\color{MarkerColour!80!black}#1} #2\hspace{2em}}
