@@ -26,15 +26,18 @@
 
 \newcommand{\smallcaps}[1]{\textsc{\lowercase{#1}}}
 
-\RequirePackage[a4paper,nohead,nofoot,hmargin=1cm,vmargin=1.2cm]{geometry}
+
+\RequirePackage[a4paper,nohead,nofoot,hmargin=0.7cm,vmargin=0.5cm]{geometry}
 \RequirePackage{relsize}
 \RequirePackage[dvipsnames,svgnames]{xcolor}
 \RequirePackage{tikz}
 \usetikzlibrary{shapes,shadows}
 
+
 \RequirePackage{comment}
 \definecolor{SwishLineColour}{HTML}{88AC0B}
 \definecolor{MarkerColour}{HTML}{B6073F}
+\newcommand{\colorpale}[1]{\small{\color{SwishLineColour}#1}}
 
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
 \RequirePackage[backend=biber,bibstyle=apa,sorting=ydnt,uniquename=init,maxnames=7,defernumbers=true]{biblatex}
@@ -60,21 +63,21 @@
 \headerscale{1}
 %\setlength{\headerspace}{6pt}
 \rubricfont{\slshape\Large\bfseries\sffamily}
-\setlength{\rubricspace}{2pt}
+\setlength{\rubricspace}{0pt}
 %\setlength{\rubricafterspace}{-9pt}
 \setlength{\rubricafterspace}{-3pt}
 \setlength{\subrubricspace}{3pt}
-\setlength{\subrubricbeforespace}{4pt}
+\setlength{\subrubricbeforespace}{2pt}
 \def\@@rubrichead#1{%
   \begin{tikzpicture}[baseline]%\
-  \shade[left color=SwishLineColour!60!white, right color=white] rectangle (\@almosttextwidth,2.5pt);
-  \node[font={\@rubricfont},inner sep=0pt,text ragged,anchor=south west,text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
+  \shade[left color=MarkerColour!60!white, right color=white] rectangle (\@almosttextwidth,2.5pt);
+  \node[font={\@rubricfont},color=MarkerColour!90!white,inner sep=0pt,text ragged,anchor=south west,text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
   \end{tikzpicture}%
   \vspace\rubricspace%
 }
 
 \subrubricfont{\slshape\large\bfseries\sffamily}
-\subrubricalignment{l}
+%\subrubricalignment{l}
 
 \newcommand{\makefield}[2]{\makebox[1.5em]{\color{MarkerColour!80!black}#1} #2\hspace{2em}}
 

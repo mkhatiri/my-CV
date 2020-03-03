@@ -13,7 +13,7 @@
 
 \usepackage{settings}
 \usepackage{todonotes}
-
+\usepackage{multicol}
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec}
@@ -40,7 +40,8 @@
  \definecolor{SwishLineColour}{HTML}{585858}
  \definecolor{MarkerColour}{HTML}{08298A}
 % Change the item prefix marker if you want
- \prefixmarker{$\bullet$}
+%\prefixmarker{$\emptyset$}
+\prefixmarker{}
 
 %% Photo is only shown if "fullonly" is included
 \includecomment{fullonly}
@@ -48,15 +49,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Curriculum Vitae KHATIRI}
-
-
 \leftheader{%
 	{\LARGE\bfseries\sffamily Mohammed KHATIRI}
 
-
 	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
 
-	\makefield{\faHome}{{39 avenue ambroise croizat,}}	
+%	\makefield{\faHome}{{39 avenue ambroise croizat,}}	
 
     \makefield{}{{38400, Saint Martin D'héres}}
    
@@ -68,14 +66,11 @@
  % link to symboles : http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
 
 }
-
-
 \rightheader{~}
 \begin{fullonly}
 \photo[r]{photo1}
-\photoscale{0.2}
+\photoscale{0.13}
 \end{fullonly}
-
 \begin{document}
 \makeheaders[c]
 \begin{center}
@@ -84,8 +79,8 @@
 \end{center}
 \makerubric{professionnelle}
 \makerubric{formations}
-\makerubric{certificationFormation}
 \makerubric{competenceInfo}
+\makerubric{certificationFormation}
 \makerubric{activiteScientifique}
 \input{publications}
 %\makerubric{activiteEnseignement}
