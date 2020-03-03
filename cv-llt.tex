@@ -40,8 +40,8 @@
  \definecolor{SwishLineColour}{HTML}{585858}
  \definecolor{MarkerColour}{HTML}{08298A}
 % Change the item prefix marker if you want
-%\prefixmarker{$\emptyset$}
-\prefixmarker{}
+\prefixmarker{$\bullet$}
+%\prefixmarker{}
 
 %% Photo is only shown if "fullonly" is included
 \includecomment{fullonly}
@@ -52,16 +52,17 @@
 \leftheader{%
 	{\LARGE\bfseries\sffamily Mohammed KHATIRI}
 
-	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
+%	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
 
 %	\makefield{\faHome}{{39 avenue ambroise croizat,}}	
 
-    \makefield{}{{38400, Saint Martin D'héres}}
-   
+%    \makefield{}{{38400, Saint Martin D'héres}}
+	\makefield{\faLinkedinSquare }{{Khatiri Mohammed}}
 
 	\makefield{\faEnvelope}{\href{mailto:khatiri.med@gmail.com}{{khatiri.med@gmail.com}}}
-	
+	   	
 	\makefield{\faMobile }{{+33 7 67 36 04 11}}
+
 
  % link to symboles : http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
 
@@ -71,18 +72,49 @@
 \photo[r]{photo1}
 \photoscale{0.13}
 \end{fullonly}
+
 \begin{document}
 \makeheaders[c]
+\hfill \colorpale{N\'e le 29 Octobre 1989}
+\par \hfill	\makefield{\faCar }{{Permis B}}  
+
 \begin{center}
+\vspace{-1.6cm}
   {\LARGE\bfseries\sffamily Doctorant en informatique}\\
   {\sffamily High-performance computing}
 \end{center}
+
+\begin{comment}
+
 \makerubric{professionnelle}
 \makerubric{formations}
 \makerubric{competenceInfo}
 \makerubric{certificationFormation}
+
 \makerubric{activiteScientifique}
 \input{publications}
+\makerubric{activiteEnseignement}
+%\makerubric{stageRecherche}
+%\makerubric{experienceProfessionnelle}
+% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
+%\makerubric{projectAcademique}
+%\makerubric{competenceInfo}
+
+\makerubric{langue}
+\makerubric{centreInteret}
+%\input{referee-full}
+
+\end{comment}
+%********** ############ Une seul page ##################
+%\begin{comment}
+
+\makerubric{professionnelle}
+\makerubric{formations}
+\makerubric{competenceInfo}
+%\makerubric{certificationFormation}
+%\makerubric{activiteScientifique}
+%\input{publications}
 %\makerubric{activiteEnseignement}
 %\makerubric{stageRecherche}
 %\makerubric{experienceProfessionnelle}
@@ -90,8 +122,16 @@
 %% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
 %\makerubric{projectAcademique}
 %\makerubric{competenceInfo}
+\begin{minipage}[c]{0.4\linewidth}
 \makerubric{langue}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\linewidth}
 \makerubric{centreInteret}
 %\input{referee-full}
+\end{minipage} 
+
+%\end{comment}
+
+
 
 \end{document}

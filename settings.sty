@@ -27,7 +27,7 @@
 \newcommand{\smallcaps}[1]{\textsc{\lowercase{#1}}}
 
 
-\RequirePackage[a4paper,nohead,nofoot,hmargin=0.7cm,vmargin=0.5cm]{geometry}
+\RequirePackage[a4paper,nohead,nofoot,hmargin=1cm,vmargin=0.5cm]{geometry}
 \RequirePackage{relsize}
 \RequirePackage[dvipsnames,svgnames]{xcolor}
 \RequirePackage{tikz}
@@ -67,10 +67,10 @@
 %\setlength{\rubricafterspace}{-9pt}
 \setlength{\rubricafterspace}{-3pt}
 \setlength{\subrubricspace}{3pt}
-\setlength{\subrubricbeforespace}{2pt}
+\setlength{\subrubricbeforespace}{4pt}
 \def\@@rubrichead#1{%
   \begin{tikzpicture}[baseline]%\
-  \shade[left color=MarkerColour!60!white, right color=white] rectangle (\@almosttextwidth,2.5pt);
+  \shade[left color=MarkerColour!60!white, right color=white] rectangle (\textwidth,2.5pt);
   \node[font={\@rubricfont},color=MarkerColour!90!white,inner sep=0pt,text ragged,anchor=south west,text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
   \end{tikzpicture}%
   \vspace\rubricspace%
