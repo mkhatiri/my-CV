@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'own-bib.blg'
+[23] biber:313> INFO - === Wed Jul 29, 2020, 19:32:19
+[121] Utils.pm:185> ERROR - Cannot find control file 'own-bib.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[121] Biber.pm:114> INFO - ERRORS: 1

@@ -1,0 +1,17 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'cv-llt.blg'
+[24] biber:313> INFO - === Wed Jul 29, 2020, 19:34:58
+[44] Biber.pm:371> INFO - Reading 'cv-llt.bcf'
+[102] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[116] Biber.pm:3981> INFO - Processing section 0
+[125] Biber.pm:4154> INFO - Looking for bibtex format file 'own-bib.bib' for section 0
+[126] bibtex.pm:1468> INFO - LaTeX decoding ...
+[132] bibtex.pm:1294> INFO - Found BibTeX data source 'own-bib.bib'
+[159] Utils.pm:169> WARN - I didn't find a database entry for crossref 'DBLP:conf/aiccsa/2015' in entry 'DBLP:conf/aiccsa/DaoudiDKK15' - ignoring (section 0)
+[173] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[173] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[173] Biber.pm:3809> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-GB'
+[173] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-GB'
+[182] bbl.pm:617> INFO - Writing 'cv-llt.bbl' with encoding 'UTF-8'
+[187] bbl.pm:720> INFO - Output to cv-llt.bbl
+[187] Biber.pm:110> INFO - WARNINGS: 1
