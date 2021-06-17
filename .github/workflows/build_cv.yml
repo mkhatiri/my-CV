@@ -36,9 +36,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build CV
         run: |
-          pdflatex cv-llt.tex
-          biber cv-llt
-          pdflatex cv-llt.tex
+          xelatex  cv-llt.tex
+       #   biber cv-llt
+       #   pdflatex cv-llt.tex
       
       - name: git push result
         run : | 
