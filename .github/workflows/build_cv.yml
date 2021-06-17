@@ -28,15 +28,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: install latex
         run: |
-          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
-          sudo apt-get install -y texlive-bibtex-extra biber
-          sudo apt-get install texmaker
-          
+          sudo apt update
+          sudo apt install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+          sudo apt install -y texlive-bibtex-extra biber
 
+      - name: list
+        run: ls
       # Runs a set of commands using the runners shell
       - name: build CV
         run: |
-          xelatex  cv-llt.tex
+          pdflatex cv-llt.tex
        #   biber cv-llt
        #   pdflatex cv-llt.tex
       
