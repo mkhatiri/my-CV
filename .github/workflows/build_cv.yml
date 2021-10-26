@@ -25,11 +25,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - uses: xu-cheng/latex-action@v2
-        with:
-          root_file: cv-llt.tex
-          latexmk_use_lualatex: true
-
+      - name: install latex
+        run: |
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+          sudo apt-get install -y texlive-bibtex-extra biber
+          sudo apt-get install texmaker
+          
+      # Runs a set of commands using the runners shell
+      - name: build CV
+        run: |
+          pdflatex cv-llt.tex
 
       - uses: actions/upload-artifact@v2
         with:
