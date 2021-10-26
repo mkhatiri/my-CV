@@ -27,7 +27,5 @@ jobs:
 
       - uses: xu-cheng/latex-action@v2
         with:
-          root_file: |
-            cv-llt.tex
-
-
+          root_file: cv-llt.tex
+          latexmk_use_xelatex: true
