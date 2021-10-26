@@ -25,26 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: install latex
-        run: |
-          sudo apt update
-          sudo apt install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
-          sudo apt install -y texlive-bibtex-extra biber
+      - uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            cv-llt.tex
 
-      - name: list
-        run: ls
-      # Runs a set of commands using the runners shell
-      - name: build CV
-        run: |
-          pdflatex cv-llt.tex
-       #   biber cv-llt
-       #   pdflatex cv-llt.tex
-      
-      - name: git push result
-        run : | 
-          git config --global user.email "khatiri.med@gmail.com"
-          git config --global user.name "Mohammed khatiri"
-          git add dcv-llt.tex
-          git commit -m "new pdf cv from git"
-          git push
+
