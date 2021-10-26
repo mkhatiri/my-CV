@@ -20,7 +20,7 @@
   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=3}]{EB Garamond}
   \setsansfont{Lato}
 \else % If you're using pdfLaTeX or latex
-	# \usepackage[utf8]{inputenc}
+	\usepackage[utf8]{inputenc}
 	\usepackage{csquotes}
 	\usepackage{mathptmx}
 	\usepackage[T1]{fontenc}
@@ -32,8 +32,8 @@
 	%\useosf  %% Comment out if you prefer lining figures rather than old style figures
 \fi
 
-%% Only needed if you want a Publication List
-%% \addbibresource{own-bib.bib}
+% Only needed if you want a Publication List
+% \addbibresource{own-bib.bib}
 % Change the page margins if you want
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
 
@@ -42,9 +42,9 @@
  \definecolor{MarkerColour}{HTML}{08298A}
 % Change the item prefix marker if you want
 \prefixmarker{$\bullet$}
-%\prefixmarker{}
+% \prefixmarker{}
 
-%% Photo is only shown if "fullonly" is included
+% Photo is only shown if "fullonly" is included
 \includecomment{fullonly}
 % \excludecomment{fullonly}
 
@@ -52,12 +52,10 @@
 \title{Curriculum Vitae KHATIRI}
 \leftheader{%
 	{\LARGE\bfseries\sffamily Mohammed KHATIRI}
-
 %	\makefield{\faMinus}{{N\'e le 29 Octobre 1989, Marocain}}
-
 %	\makefield{\faHome}{{39 avenue ambroise croizat,}}	
-
 %    \makefield{}{{38400, Saint Martin D'héres}}
+
 	\makefield{\faMobile }{{+33 7 67 36 04 11}}
 	
 	\makefield{\faEnvelope}{\href{mailto:khatiri.med@gmail.com}{{khatiri.med@gmail.com}}}
@@ -65,8 +63,6 @@
 	\makefield{\faLinkedinSquare}{\href{http://www.linkedin.com/in/mkhatiri}{www.linkedin.com/in/mkhatiri}}
 	
 	\makefield{\faGlobe}{\href{https://mkhatiri.github.io}{{mkhatiri.github.io }}\colorpale{ (CV complet)}}
- % link to symboles : 
-
 }
 \rightheader{~}
 \begin{fullonly}
@@ -85,7 +81,6 @@
   {\sffamily Certified - Professional Cloud Architect}
 \end{center}
 
-%\begin{comment}
 
 \makerubric{professionnelle}
 \makerubric{formations}
@@ -96,8 +91,6 @@
 %\makerubric{activiteEnseignement}
 %\makerubric{stageRecherche}
 %\makerubric{experienceProfessionnelle}
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
 %\makerubric{projectAcademique}
 %\makerubric{competenceInfo}
 
@@ -107,33 +100,5 @@
 \begin{minipage}[c]{0.5\linewidth}
 \makerubric{centreInteret}
 \end{minipage} 
-
-
-%\end{comment}
-%********** ############ Une seul page ##################
-\begin{comment}
-
-\makerubric{professionnelle}
-\makerubric{formations}
-\makerubric{competenceInfo}
-%\makerubric{certificationFormation}
-%\makerubric{activiteScientifique}
-%\input{publications}
-%\makerubric{activiteEnseignement}
-%\makerubric{stageRecherche}
-%\makerubric{experienceProfessionnelle}
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-%\makerubric{projectAcademique}
-%\makerubric{competenceInfo}
-\begin{minipage}[c]{0.4\linewidth}
-\makerubric{langue}
-\end{minipage} \hfill
-\begin{minipage}[c]{0.5\linewidth}
-\makerubric{centreInteret}
-%\input{referee-full}
-\end{minipage} 
-
-\end{comment}
 
 \end{document}
