@@ -26,9 +26,8 @@ jobs:
 
       - name: install latex
         run: |
-          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
-          sudo apt-get install -y texlive-bibtex-extra biber
-          sudo apt-get install texmaker
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra
           
       # Runs a set of commands using the runners shell
       - name: build CV
