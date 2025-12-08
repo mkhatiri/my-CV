@@ -35,6 +35,13 @@ jobs:
           pdflatex cv-llt.tex
 
       - uses: actions/upload-artifact@v5
+        if: always()
         with:
           name: PDF
-          path: cv-llt.tex
+          path: cv-llt.pdf
+          
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: Build-Log
+          path: cv-llt.log
