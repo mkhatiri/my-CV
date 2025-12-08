@@ -35,7 +35,7 @@ jobs:
         run: |
           pdflatex cv-llt.tex
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v5
         with:
           name: PDF
           path: cv-llt.tex
