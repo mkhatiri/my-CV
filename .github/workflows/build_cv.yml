@@ -34,11 +34,17 @@ jobs:
         run: |
           pdflatex cv-llt.tex
 
+      - name: Rename PDF with timestamp
+        run: |
+          timestamp=$(date +"%Y%m%d_%H%M%S")
+          cp cv-llt.pdf "cv-llt_${timestamp}.pdf"
+
       - uses: actions/upload-artifact@v5
-        if: always()
+        if: success()
         with:
-          name: PDF
-          path: cv-llt.pdf
+          name: CV-PDF
+          path: cv-llt_*.pdf
+          compression-level: 0
           
       - uses: actions/upload-artifact@v5
         if: always()
